@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(){
     
     // add padding-top to bady (if necessary)
     navbar_height = document.querySelector('.navbar').offsetHeight;
-    document.body.style.paddingTop = navbar_height + 'px';
+    // document.body.style.paddingTop = navbar_height + 'px';
   
     if(el_autohide){
       var last_scroll_top = 0;
