@@ -20,17 +20,16 @@
     background-size: 100% 100%;
 }
 .sub-header {
-    transform: translateY(150px);
+    transform: translateY(130px);
 }
 .sub-header p{
-    color: rgb(222, 226, 226);
+    color: rgb(240, 239, 239);
 }
 .categories {
-    width: 100%;
-    background: black;
+    background: rgb(132, 196, 207);
 }
 .categories img {
-    width: 100%;
+    width: 14%;
 }
 
 @media only screen and (max-width:600px){
