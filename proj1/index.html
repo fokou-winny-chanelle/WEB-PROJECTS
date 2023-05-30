@@ -19,6 +19,7 @@
 
     <!-- Main CSS File -->
     <link rel="stylesheet" href="/style.css">
+    <!-- fontawesome icons -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <meta charset="UTF-8">
@@ -34,7 +35,7 @@
     <nav class="autohide fixed-top navbar navbar-expand-lg">
       <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <div style="height:100px" class="fw-bold text-center border border-5 border-black text-white w-75 ms-1 ">
+            <div style="height:100px; border-color: black !important;" class="fw-bold text-center border border-5 text-white w-75 ms-1 ">
                 <img  src="/images/logo3.png"class="img-fluid w-75 mt-1"><br>
                 <small style="font-size:15px" class="fst-italic"> FWC'S &nbsp &nbsp E-SHOP</small>
             </div>
@@ -48,14 +49,13 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <div class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">
+              <div class="nav-link dropdown-toggle">
                 Products
               </div>
-              <ul class="dropdown-menu bg-primary">
-                <li><a class="dropdown-item" href="#">Male products</a></li>
-                <li><a class="dropdown-item" href="#">Female products</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">childrens products </a></li>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Clothes</a></li>
+                <li><a class="dropdown-item" href="#">Shoes</a></li>
+                <li><a class="dropdown-item" href="#">Asseccories</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -112,10 +112,22 @@
     </div>
   </section>
 
-  <div class="display-1" data-mdb-toggle="animation" data-mdb-animation-reset="true" data-mdb-animation="slide-out-right" > hello</div>
 
-  <script src="/bootstrap-5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/vendor/aos/aos.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
   <script src="/script.js"></script>
-  <script src="/lib/wow/wow.min.js"></script>
+  
+ 
+  
 </body>
 </html>
