@@ -1,3 +1,5 @@
+// hide nave bar when scroll up and show when scroll down
+
 document.addEventListener("DOMContentLoaded", function(){
 
     el_autohide = document.querySelector('.autohide');
@@ -25,3 +27,19 @@ document.addEventListener("DOMContentLoaded", function(){
     // if
   
   }); 
+
+
+  
+// aos init
+// AOS.init({
+//   duration: 800,
+// })
+  window.addEventListener('load', () => {
+    AOS.init({
+      duration: 300,
+      delay:200,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    })
+  });
