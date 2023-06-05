@@ -49,7 +49,6 @@
 .nav-link:hover{
     color: white !important;
 }
-
 .navbar .dropdown ul {
     font-size: 20px;
     display: block;
@@ -83,7 +82,7 @@
   } 
 
 .header{
-    background: linear-gradient(rgba(5, 119, 110, 0.212),rgba(100, 56, 18, 0.39)),url(/images/bg.png);
+    background: linear-gradient(rgba(0, 5, 10, 0.205),rgba(1, 3, 14, 0.205)),url(/images/bg.png);
     width: 100%;
     height: 100vh;
     background-size: 100% 100%;
@@ -94,18 +93,219 @@
 .sub-header p{
     color: rgb(240, 239, 239);
 }
+.title{
+  transform: translateY(50px);
+}
+.categories{
+  height: 550px;
+  background: linear-gradient(rgba(0, 5, 10, 0.692),rgba(77, 72, 4, 0.411));
+}
+.categories .con-cat img{
+  width: 210px;
+  height: 80%;
+}
+.con-cat{
+  height: 350px;
+}
+.con-cat a{
+  color: rgba(255, 187, 0);
+}
+.con-cat a:hover{
+  color: white;
+}
+.con-cat img:hover{
+  transform: scale(1.2);
+}
 #about{
-  background-image: url(images/central-embassy-498560.jpg);
+  background-image: linear-gradient(rgba(0, 5, 10, 0.384),rgba(1, 3, 14, 0.411)),url(images/central-embassy-498560.jpg);
   height: 100vh;
   background-size: 100% 100%;
 }
+#about-slide:hover{
+  transform: scale(1.1);
+}
+ #about-slide::before {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  content: "";
+  border-left: 5px solid #cda45e;
+  border-top: 5px solid #cda45e;
+  transition: 0.5s;
+}
 
-@media only screen and (max-width:600px){
+#about-slide::after {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  content: "";
+  border-right: 5px solid #cda45e;
+  border-bottom: 5px solid #cda45e;
+  transition: 0.5s;
+}
+#about-slide:hover::before {
+  left: 10px;
+  top: 10px;
+}
+
+#about-slide:hover::after {
+  right: 10px;
+  bottom: 10px;
+}
+#products{
+  background: linear-gradient(rgba(77, 72, 4, 0.411),rgba(0, 5, 10, 0.692));
+}
+.mrow {
+  display: flex;
+  align-items: center; 
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.colm {
+  flex-basis: 20%;
+  min-width: 270px;
+}
+.colm img {
+  width: 100%;
+  height: 340px;
+  box-shadow: 0 0 10px 0 rgba(238, 204, 12, 0.815);
+  border-radius: 30px;
+}
+.colm h4 {
+  color:rgb(255, 255, 255);
+  font-weight: normal;
+  margin-top: 10px;
+}
+.colm p{
+  font-size: 16px;
+  color: #ffefd4;
+}
+.raiting .fa{
+  color:  #cda45e;
+}
+.colm .sub4{
+}
+.colm .sub4:hover {
+  transform: scale(1.1);
+}
+#exclusive{
+  background: linear-gradient(rgba(0, 5, 10, 0.384),rgba(1, 3, 14, 0.411)),url(/images/bg-e1.png);
+  background-size: 100% 100%;
+}
+.ex-img{
+  box-shadow: 0 0 10px 0 rgba(238, 204, 12, 0.815);
+  width: 80%;
+  height: 83vh;
+}
+.ex-img:hover{
+  transform: scale(1.1); 
+}
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+#testimonials{
+  background: linear-gradient(rgba(77, 72, 4, 0.411),rgba(0, 5, 10, 0.692));
+}
+.testimonials .testimonial-item .testimonial-img {
+  width: 90px;
+  border-radius: 50%;
+  margin: -40px 0 0 40px;
+  position: relative;
+  z-index: 2;
+  border: 6px solid rgba(255, 255, 255, 0.2);
+}
+
+.testimonials .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 45px;
+  color: white;
+}
+
+.testimonials .testimonial-item h4 {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.685);
+  margin: 0 0 0 45px;
+}
+
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+  color: rgba(255, 187, 0);
+  font-size: 26px;
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 0 15px 0 15px;
+  padding: 20px 20px 60px 20px;
+  background: linear-gradient(rgba(0, 5, 10, 0.384),rgba(1, 3, 14, 0.411)),url(images/central-embassy-498560.jpg);
+  border-radius: 6px;
+  color: white;
+}
+
+.testimonials .swiper-pagination {
+  margin-top: 30px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.692);
+  opacity: 1;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: rgba(255, 187, 0);
+}
+
+
+@media only screen and (max-width:800px){
     .header{
         background-size: 200% 100% ;
     }
     .sub-header {
         transform: translateY(100px);
+    }
+    .categories{
+      height: 365vh;
+    }
+    .con-cat{
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .categories .con-cat img{
+      width: 270px;
+      height: 300px;
+    }
+    #about{
+      height: 150vh;
+      background-size: 200% 100%;
+    }
+    .ex-img{
+      box-shadow: 0 0 10px 0 rgba(238, 204, 12, 0.815);
+      height: 80%;
     }
 }
 
