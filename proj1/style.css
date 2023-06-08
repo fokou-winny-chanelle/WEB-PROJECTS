@@ -161,6 +161,9 @@
 #products{
   background: linear-gradient(rgba(77, 72, 4, 0.411),rgba(0, 5, 10, 0.692));
 }
+#products-1{
+  background: rgba(0, 5, 10, 0.692);
+}
 .mrow {
   display: flex;
   align-items: center; 
@@ -192,7 +195,7 @@
 .colm .sub4{
 }
 .colm .sub4:hover {
-  transform: scale(1.2);
+  transform: scale(1.23);
 }
 #exclusive{
   background: linear-gradient(rgba(0, 5, 10, 0.384),rgba(1, 3, 14, 0.411)),url(/images/bg-e1.png);
