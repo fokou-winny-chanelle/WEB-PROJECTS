@@ -72,3 +72,22 @@ document.addEventListener("DOMContentLoaded", function(){
     }
   }
 });
+
+// -----------------js for toggle form ---------------------
+
+var logf = document.getElementById("logf");
+var regf = document.getElementById("regf");
+var Indicator = document.getElementById("Indicator");
+
+function register() 
+{
+  logf.style.transform = "translateX(0px)";
+  regf.style.transform = "translateX(0px)";
+  Indicator.style.transform = "translateX(100px)";
+}
+function login() 
+{
+  logf.style.transform = "translateX(305px)";
+  regf.style.transform = "translateX(305px)";
+  Indicator.style.transform = "translateX(0px)";
+}

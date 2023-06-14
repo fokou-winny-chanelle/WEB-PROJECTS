@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- pageicons -->
+    <link href="images/logo3.png" rel="icon">
+    <link href="images/logo3.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="/vendor/aos/aos.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- fontawesome icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FWC'S E-SHOP </title>
+</head>
+
+<body>
+
+  <div class="header">
+    <!-- navigation bar -->
+    <nav class="autohide fixed-top navbar navbar-expand-lg">
+      <div data-aos="fade-down" class="container-fluid con-nav">
+          <a class="navbar-brand" href="#">
+            <div data-aos="fade-down" style="height:100px; border-color: black !important;" class="fw-bold text-center border border-5 text-white w-75 ms-1 ">
+                <img  src="/images/logo3.png"class="img-fluid w-75 mt-1"><br>
+                <small style="font-size:15px" class="fst-italic"> FWC'S &nbsp &nbsp E-SHOP</small>
+            </div>
+          </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon bg-white border border-3 border-black rounded" ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="font-size: 30px;">
+            <li class="nav-item">
+              <a class="nav-link active" data-aos="fade-down" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-aos="fade-down" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <div class="nav-link dropdown-toggle" data-aos="fade-down">
+                Shop
+              </div>
+              <ul class="dropdown-menu text-center">
+                <li><a class="dropdown-item" href="shop_shoes.html">Shoes</a></li>
+                <li><a class="dropdown-item" href="shop_accessories.html">Asseccories</a></li>
+                <li class="dropdown-item">
+                  <div class="dropdown">
+                    <a><span> &nbsp &nbspClothes  - <i class="bi bi-chevron-right"></i>&nbsp &nbsp</span></a>
+                  <ul class="dropdown-menu text-center">
+                    <li><a class="dropdown-item" href="shop_clothes.html#men-wear">Men's wear</a></li>
+                    <li><a class="dropdown-item" href="shop_clothes.html#women-wear">Women's wear</a></li>
+                    <li><a class="dropdown-item" href="shop_clothes.html#kid-wear">kid's wear</a></li>
+                  </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-aos="fade-down" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-aos="fade-down" href="#">Account</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" data-aos="fade-down">
+                <i class="fa fa-cart-arrow-down" aria-hidden="true" style="color:rgb(255, 187, 0); transform:translateY(3px); margin-left: 10px;"></i>
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search" data-aos="fade-down">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-warning fw-bold border-3" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- intro-header -->
+    <div class="container-sm sub-header justify-content-center align-items-center p-5">
+
+        <div class="form-container">
+            <div class="form-btn">
+                <span onclick="login()">Login</span>
+                <span onclick="register()">Register</span>
+                <hr id="Indicator">
+            </div>
+            <form id="logf">
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button type="submit" class="btn">Submit</button><br>
+                <a href="">Forgot Password</a>
+            </form>
+            <form id="regf">
+                <input type="text" placeholder="Username">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+
+    </div>
+
+  </div>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <br>
+    <div class="footer-top">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <a href="#"><div class="container" id="foot-logo-text" style="margin-left: -16px;">
+                <div style="height:90px; border-color: white !important;" class="fw-bold text-center border border-5 text-white w-50 ms-1 ">
+                  <img  src="/images/logo3.png"class="img-fluid w-75 mt-1"><br>
+                  <small style="font-size:15px" class="fst-italic"> FWC'S &nbsp &nbsp E-SHOP</small>
+                </div>
+              </div></a>
+              <p>
+                Last floor Unics Bank <br>
+                Molyko Buea, CAMEROON<br><br>
+                <strong>Phone:</strong> +237 691782187<br>
+                <strong>Email:</strong> fokouchanelle@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#products">featured products</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#testimonials">Testimonials</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="shop_shoes.html">Shoes</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="shop_accessories.html">Accessories</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="shop_clothes.html#men-wear">Men's wears</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="shop_clothes.html#women-wear">Women's wears</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="shop_clothes.html#kid-wear">kid's wears</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-end">
+            <h3>Download Our App</h3>
+            <p>Download app for android and ios mobile phone</p>
+            <div class="app-logo">
+              <img src="images/play-store.png" >
+              <img src="images/app-store.png" >
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <hr>
+		<p class="copyright text-center text-primary">Copyright 2023 - Fokou Winny Chanelle</p>
+    <br>
+  </footer><!-- End Footer -->
+
+  
+</div>
+  
+
+  
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/vendor/aos/aos.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/script.js"></script>
+  
+ 
+  
+</body>
+</html>
