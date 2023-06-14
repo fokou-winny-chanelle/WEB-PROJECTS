@@ -331,71 +331,51 @@ textarea{
 }
 
 /* -------------------account-page-------------- */
-.form-container {
-  /* background: white; */
-  width: 400px;
+.account {
+  background-color: rgba(0, 2, 10, 0.329);
+  width: 370px;
   height: 400px;
   position: relative;
-  text-align: center;
   padding: 20px 0;
-  margin: auto;
-  margin-bottom: 10px;
-  box-shadow: 0 0 20px 0 rgb(140, 194, 194);
-  /* overflow: hidden; */
+  box-shadow: 0 0 10px 0 rgba(255, 187, 0, 0.315);
+  overflow: hidden;
 }
-.form-container span {
-  font-weight: bold;
-  padding: 0 10px;
-  color: #555;
+.account span {
+  font-size: 20px;
+  color: white;
   cursor: pointer;
-  width: 100px;
-  display: inline-block;
 }
-.form-btn {
-  display: inline-block;
-}
-.form-container form {
-  max-width: 300px;
-  padding: 0 20px;
+.account form { 
+  align-items: center;
+  width: 100%;
   position: absolute;
-  top: 130px;
-  transition: 1s;
+  top: 110px;
+  transition: 00.3s;
 }
-form input {
+.account form input {
   width: 80%;
-  height: 30px;
+  height: 40px;
   margin: 10px 0;
   padding: 0 10px;
-  border: 1px solid #ccc;
-}
-form .btn {
-  width: 80%;
-  border: none;
-  cursor: pointer;
-  margin: 10px 0;
+  border: 2px solid white;
+  border-radius: 30px;
+  background: rgba(0, 2, 10, 0.699);
+  color: white;
 } 
-
-form .btn:focus {
-  outline: none;
-}
 #logf {
-  left: -325px;
+  left: -20px;
 }
 #regf {
-  left: 0px;
-}
-form a {
-  font-size: 12px;
+  left: 350px;
 }
 #Indicator {
   width: 110px;
   height: 3px;
   border: none;
   margin-top: 8px;
-  margin-left: 20px;
-  background: #ff523b;
-  transform: translateX(135px);
-  transition: 1s;
+  margin-left: 45px;
+  background: rgba(255, 187, 0) ;
+  transition: 0.3s;
 }
 
 

@@ -46,7 +46,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="font-size: 30px;">
             <li class="nav-item">
-              <a class="nav-link active" data-aos="fade-down" aria-current="page" href="#">Home</a>
+              <a class="nav-link" data-aos="fade-down" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" data-aos="fade-down" href="about.html">About</a>
@@ -74,7 +74,7 @@
               <a class="nav-link" data-aos="fade-down" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-aos="fade-down" href="#">Account</a>
+              <a class="nav-link active" data-aos="fade-down" href="account.html">Account</a>
             </li>
 
             <li class="nav-item">
@@ -92,28 +92,26 @@
     </nav>
 
     <!-- intro-header -->
-    <div class="container-sm sub-header justify-content-center align-items-center p-5">
-
-        <div class="form-container">
+    <div class="container-fluid sub-header d-flex justify-content-center align-items-center p-5">
+        <div class="account text-center">
             <div class="form-btn">
-                <span onclick="login()">Login</span>
-                <span onclick="register()">Register</span>
-                <hr id="Indicator">
+                <span class="me-5" onclick="login()">Login</span>
+                <span class="ms-5" onclick="register()">Register</span>
+                <p id="Indicator">
             </div>
-            <form id="logf">
-                <input type="text" placeholder="Username">
-                <input type="password" placeholder="Password">
-                <button type="submit" class="btn">Submit</button><br>
+            <form id="logf" style="width: 106%; margin:10px;">
+                <input id="name" type="text" placeholder="Username">
+                <input id="password" type="password" placeholder="Password"><br><br>
+                <button type="submit" class="btn btn-outline-warning">Submit</button><br><br>
                 <a href="">Forgot Password</a>
             </form>
             <form id="regf">
-                <input type="text" placeholder="Username">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <button type="submit" class="btn">Register</button>
+                <input id="name" type="text" placeholder="Username">
+                <input id="email" type="email" placeholder="Email">
+                <input id="password" type="password" placeholder="Password"><br><br>
+                <button type="submit" class="btn btn-outline-warning">Register</button>
             </form>
         </div>
-
     </div>
 
   </div>
